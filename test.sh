@@ -5,4 +5,4 @@ text=($(curl -s https://raw.githubusercontent.com/dilshanhiruna/bash-test2/main/
 
 echo "Hi from test.sh"
 
-cat $text
+echo $text
