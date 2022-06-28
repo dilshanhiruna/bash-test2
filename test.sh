@@ -1,4 +1,4 @@
-echo "start 130"
+echo "start 131"
 
 #import text from https://raw.githubusercontent.com/dilshanhiruna/bash-test2/main/code-templates/test/hi.txt and save it to FILE
 $FILE=hi.txt
