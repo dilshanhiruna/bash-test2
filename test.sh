@@ -1,4 +1,4 @@
-echo "start 118"
+echo "start 119"
 
 FILE= read -r source <(curl -s https://raw.githubusercontent.com/dilshanhiruna/bash-test2/main/code-templates/test/hi.txt)
 
