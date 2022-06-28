@@ -1,9 +1,8 @@
-echo "start 124"
+echo "start 125"
 
-#import text from https://raw.githubusercontent.com/dilshanhiruna/bash-test2/main/code-templates/test/hi.txt and save it to FILE
-FILE=hi.txt
-curl -s https://raw.githubusercontent.com/dilshanhiruna/bash-test2/main/code-templates/test/hi.txt >$FILE
+#import text from https://raw.githubusercontent.com/dilshanhiruna/bash-test2/main/code-templates/test/hi.txt and save it to a variable IFS
+text=($(curl -s https://raw.githubusercontent.com/dilshanhiruna/bash-test2/main/code-templates/test/hi.txt))
 
 echo "Hi from test.sh"
 
-cat $FILE
+echo $text
