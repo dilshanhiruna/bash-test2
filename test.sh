@@ -1,7 +1,9 @@
-echo "start 119"
+echo "start 120"
 
-FILE= read -r source <(curl -s https://raw.githubusercontent.com/dilshanhiruna/bash-test2/main/code-templates/test/hi.txt)
+FILE= source <(curl -s https://raw.githubusercontent.com/dilshanhiruna/bash-test2/main/code-templates/test/hi.txt)
+
+IFS= cat $FILE
 
 echo "Hi from test.sh"
 
-echo "file: $FILE"
+echo "file: $IFS"
