@@ -2,4 +2,4 @@ FILE=$(<https://raw.githubusercontent.com/dilshanhiruna/bash-test2/main/code-tem
 
 echo "Hi from test.sh"
 
-echo "test file $FILE"
+echo "file: $FILE"
