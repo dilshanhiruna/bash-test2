@@ -1,6 +1,8 @@
-echo "start 123"
+echo "start 124"
 
-FILE= source <(curl -s https://raw.githubusercontent.com/dilshanhiruna/bash-test2/main/code-templates/test/hi.txt -o)
+#import text from https://raw.githubusercontent.com/dilshanhiruna/bash-test2/main/code-templates/test/hi.txt and save it to FILE
+FILE=hi.txt
+curl -s https://raw.githubusercontent.com/dilshanhiruna/bash-test2/main/code-templates/test/hi.txt >$FILE
 
 echo "Hi from test.sh"
 
