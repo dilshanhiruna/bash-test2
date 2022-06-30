@@ -1,4 +1,4 @@
-echo "start 1359"
+echo "start 1360"
 
 get_file_path() {
 
@@ -28,6 +28,6 @@ get_file_path() {
 
 # URL="code-templates/test/hi.txt"
 
-SOURCE= get_file_path "production" "code-templates/test/hi.txt" "https://raw.githubusercontent.com/rootaid/bash/main"
+SOURCE= get_file_path "production" "code-templates/test/hi.txt" "https://raw.githubusercontent.com/dilshanhiruna/bash-test2/main"
 
 echo "$SOURCE" >index.ts
