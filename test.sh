@@ -1,6 +1,6 @@
-echo "start 1367"
+echo "start 1369"
 
-get_file_path() {
+function get_file_path() {
 
     # $1 = enviroment
     # $2 = file path (eg: code-templates/test/hi.txt)
@@ -8,11 +8,11 @@ get_file_path() {
 
     if [ $1 == "development" ]; then
         URL=$2
-        return "$(<$URL)"
+        echo "$(<$URL)"
     fi
     if [ $1 == "production" ]; then
         URL="curl -s $3/$2"
-        return "$($URL)"
+        echo "$($URL)"
     fi
 
 }
