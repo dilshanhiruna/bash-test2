@@ -1,4 +1,4 @@
-echo "start 1370"
+echo "start 1371"
 
 function get_file_path() {
 
@@ -17,16 +17,16 @@ function get_file_path() {
 
 }
 
-# URL="curl -s https://raw.githubusercontent.com/dilshanhiruna/bash-test2/main/code-templates/test/hi.txt"
+URL="curl -s https://raw.githubusercontent.com/dilshanhiruna/bash-test2/main/code-templates/test/hi.txt"
 
-# SOURCE="$($URL)"
+SOURCE="$($URL)"
 
-# echo "$SOURCE" >index.ts
+echo "$SOURCE" >index.ts
 
 # ##############################################################################
 
 # URL="code-templates/test/hi.txt"
 
-SOURCE=$($get_file_path "production" "code-templates/test/hi.txt" "https://raw.githubusercontent.com/dilshanhiruna/bash-test2/main")
+# SOURCE=$($get_file_path "production" "code-templates/test/hi.txt" "https://raw.githubusercontent.com/dilshanhiruna/bash-test2/main")
 
-echo "$SOURCE" >index.ts
+# echo "$SOURCE" >index.ts
