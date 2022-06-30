@@ -1,4 +1,4 @@
-echo "start 1355"
+echo "start 1356"
 
 get_file_path() {
 
@@ -8,11 +8,11 @@ get_file_path() {
 
     if [ $1 == "development" ]; then
         URL= $2
-        return <$URL
+        return "$(<$URL)"
     fi
     if [ $1 == "production" ]; then
         URL="curl -s $3/$2"
-        return $URL
+        return "$($URL)"
     fi
 
 }
@@ -27,6 +27,6 @@ get_file_path() {
 
 # URL="code-templates/test/hi.txt"
 
-SOURCE="$($get_file_path production code-templates/test/hi.txt https://raw.githubusercontent.com/rootaid/bash/main)"
+SOURCE=get_file_path production code-templates/test/hi.txt https://raw.githubusercontent.com/rootaid/bash/main
 
 echo "$SOURCE" >index.ts
