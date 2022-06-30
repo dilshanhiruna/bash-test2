@@ -1,4 +1,4 @@
-echo "start 1368"
+echo "start 1367"
 
 get_file_path() {
 
@@ -11,8 +11,8 @@ get_file_path() {
         return "$(<$URL)"
     fi
     if [ $1 == "production" ]; then
-        URL=$($curl -s $3/$2)
-        return "$URL"
+        URL="curl -s $3/$2"
+        return "$($URL)"
     fi
 
 }
